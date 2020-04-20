@@ -16,7 +16,7 @@ const Edit = () => {
             await api.updatePost({
                 title, description
             }, id)
-            history.push("/");
+            history.push("/admin/");
         } catch (error) {
             alert('Failed to edit post')
         } finally{

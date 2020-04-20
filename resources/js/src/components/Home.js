@@ -31,7 +31,7 @@ const Home = () => {
             return(
                 <tr>
                     <td>
-                        There is no post yet, <Link to="/add" className="btn btn-primary">Add One</Link>.
+                        There is no post yet, <Link to="/admin/add" className="btn btn-primary">Add One</Link>.
                     </td>
                 </tr>
             );
@@ -42,7 +42,7 @@ const Home = () => {
                 <td>{post.title}</td>
                 <td>{post.description}</td>
                 <td>
-                    <Link to={`/edit/${post.id}`} className="btn btn-warning">Edit</Link>
+                    <Link to={`/admin/edit/${post.id}`} className="btn btn-warning">Edit</Link>
                     <button 
                         type="button" 
                         className="btn btn-danger"
@@ -62,7 +62,7 @@ const Home = () => {
         <AppContainer
         title="Laravel ReactJs - Crud"
         >
-            <Link to="/add" className="btn btn-primary">Add Item</Link>
+            <Link to="/admin/add" className="btn btn-primary">Add Item</Link>
                 <table className="table">
                     <thead>
                         <tr>

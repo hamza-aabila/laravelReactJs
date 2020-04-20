@@ -16,7 +16,7 @@ const Add = () => {
             await api.addPost({
                 title, description
             })
-            history.push("/");
+            history.push("/admin/");
         } catch (error) {
             alert('Failed to add post')
         } finally{
